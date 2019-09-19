@@ -6,14 +6,14 @@ import pandas as pd
 
 ########### Define your variables ######
 
-tabtitle = 'the district'
-myheading1 = 'Step Back! The doors are about to close!'
-myheading2 = 'Back2Good'
-image1 = 'dc-flag.jpg'
-image2 = 'metro-map.png'
-textbody = "Metro's recent on time performance ratings are so good, it's getting harder to find a good reason to take a car!"
-sourceurl = 'https://www.wmata.com/about/back2good/index.cfm'
-githublink = 'https://github.com/austinlasseter/dash-dc-layout'
+tabtitle = 'Rock Creek Park'
+myheading1 = "An Oasis in the City"
+myheading2 = "America's 3rd Designated National Park"
+image1 = 'Rock_Creek_Park_NPS_sign.jpg'
+image2 = 'rcp_map.jpg'
+textbody = "Teddy Roosevelt explored the park - you should too!"
+sourceurl = 'https://www.nps.gov/rocr/index.htm'
+githublink = 'https://github.com/aidanjdm/dash-dc-layout'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -34,13 +34,13 @@ app.layout = html.Div(children=[
         ],className='three columns'),
         html.Div([
             html.Div(textbody, style={
-                'padding': '12px',
-                'font-size': '22px',
-                'height': '120px',
-                'border': 'thin red solid',
+                'padding': '4px',
+                'font-size': '16px',
+                'height': '100px',
+                'border': 'thin green solid',
                 'color': 'rgb(255, 255, 255)',
                 'backgroundColor': 'rgb(57, 83, 107)',
-                'textAlign': 'right',
+                'textAlign': 'center',
                 }),
         ],className='six columns'),
     ],className='twelve columns'),
